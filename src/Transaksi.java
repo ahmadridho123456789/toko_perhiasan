@@ -27,7 +27,7 @@ private String t;
 private void koneksi(){
     try {
         Class.forName("com.mysql.jdbc.Driver");
-            con=(com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost/perhiasan", "root", "tracy123");
+            con=(com.mysql.jdbc.Connection) DriverManager.getConnection("jdbc:mysql://localhost/perhiasan", "root", "");
             stat=(com.mysql.jdbc.Statement) con.createStatement();
         } catch (ClassNotFoundException | SQLException e) {
         JOptionPane.showMessageDialog(null, e);
